@@ -1,0 +1,76 @@
+body {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+h2 {
+    text-decoration: underline;
+}
+.form_page {
+    width: 47%;
+    margin: 2rem auto;
+    padding: 1em;
+    border-radius: 20px;
+    /* display: flex;
+    flex-flow: row nowrap; */
+    background-color: rgb(160, 158, 158);
+}
+legend {
+    display: block;
+    font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.1rem;
+	margin-bottom: 1.1rem;
+}
+label {
+    font-size: 1.3rem;
+    display: inherit;
+    padding-bottom: 0.3rem;
+    border-radius: 10px;
+}
+fieldset {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+select {
+    font-size: 1rem;
+}
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+	display: inline-block;
+	margin-bottom: 1.3rem;
+	width: 15rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2rem;  /* associated with HEIGHT of input field  */
+	padding: 0 1rem;
+    border-radius: 10px;
+}
+textarea {
+    width: 30rem;
+    height: 7rem;
+    padding: 1rem;
+}
+button {
+	font-size: 1.2rem;
+	margin: 1.5rem 0;
+	background-color: rgb(82, 82, 240);
+	color: white;
+	border: none;
+	padding: 0.8rem 1.3rem;  /* button has more space around "submit" */
+    border-radius: 10px;
+}
+/* .small_number {
+    width: 40px;
+} input styling does not let (or overwrites if small_number placed (in css code) before it) to adjust separate input fields */
+
+/* needs also button:hover state */

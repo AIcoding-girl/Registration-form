@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration form</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-image:url(images/field2.jpg)">
+    <div class="form_page">
+        <h1>You are welcome to join the Tennis Club!</h1>
+
+        <p>All new members are very welcome. If you would like to join our club, please fill in this form.</p>
+
+        <p>Full year membership fees for 2019-2020 can be found <a href="#">here.</a></p>
+
+        <h2>Membership Application</h2>
+
+        <form>
+            <fieldset>
+                <legend>Category</legend>
+                <label>
+                    <input type="radio" name="ms_category" value="full_member">Full Member (Adult 18yrs or older)
+                </label>
+
+                <label>
+                    <input type="radio" name="ms_category" value="family_member">Family Member (2 Adult Full Members &
+                    all children under 18)
+                </label>
+
+                <label>
+                    <input type="radio" name="ms_category" value="junior">Junior Member (Under 18yrs of age)
+                </label>
+
+                <label>
+                    <input type="radio" name="ms_category" value="student">Student Member (In full time education)
+                </label>
+
+                <label>
+                    <input type="radio" name="ms_category" value="senior">Senior Member (Adult aged 65 or over)
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full_name">Full name</label>
+                <input type="text" id="fullname" name="first_name" placeholder="First name">
+                <input type="text" id="fullname" name="surname" placeholder="Last name">
+
+                <label for="gender">Gender</label>
+                <!--Needs extra styling; displayed in row and space between next label block-->
+                <label>
+                    <input type="radio" id="gender" name="gender" value="male">Male
+                </label>
+
+                <label>
+                    <input type="radio" id="gender" name="gender" value="female">Female
+                </label>
+
+                <label for="birth_date">Date of Birth</label>
+                <input type="date" id="birth_date" name="date">
+
+                <label for="address">Address</label>
+                <input type="text" placeholder="Street name">
+                <input type="text" class="small_number" placeholder="Nr"> <!-- needs smaller width for input field (also for "country code" field)-->
+                <input type="text" placeholder="Postal code">
+                <input type="text" placeholder="City">
+                <select name="country" id="country">
+                    <option selected>Select country ...</option>
+                    <optgroup label="Benelux countries">
+                        <option value="netherlands">The Netherlands</option>
+                        <option value="belgium">Belgium</option>
+                        <option value="luxembourg">Luxembourg</option>
+                    </optgroup>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                </select>
+
+                <label for="phone">Mobile Phone</label>
+                <input type="text" class="small_number" id="phone" name="country_code" placeholder="Country code"> <!-- needs smaller width for input field (also for "street number"" field)-->
+                <input type="tel" id="phone" name="number" placeholder="Number">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@gmail.com">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Terms</legend>
+
+                <label for="payment_plan">Please select your membership plan:</label>
+                <select name="payment_plan" id="payment_plan">
+
+                    <option value="year" selected>1 year</option>
+                    <option value="half_year">Half year</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" value="agree" name="agree">I have read and fully understand the <a
+                        href="#">Code of Conduct & Ethics Policy</a> of Tennis Club.
+                </label>
+
+                <label>
+                    <input type="checkbox" value="gdpr" name="gdpr">I acknowledge that I agree to the <a href="#">Terms
+                        of Use</a> and have read the <a href="#">Privacy Policy</a>.
+                </label>
+
+                <label for="comments">Additional information:</label>
+                <textarea name="comments" id="comments" placeholder="Write here ..." minlength="0"
+                    maxlength="255"></textarea>
+
+                <label>
+                    <input type="checkbox" value="subscribe" name="subscribe" checked>Add me to your
+                    email list!
+                </label>
+
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
